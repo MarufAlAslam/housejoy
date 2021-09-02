@@ -1,0 +1,1728 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Mirrored from doccure-html.dreamguystech.com/template/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Sep 2021 10:23:52 GMT -->
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=0"
+    />
+    <title>Doccure</title>
+
+    <link type="image/x-icon" href="assets/img/favicon.png" rel="icon" />
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="assets/plugins/fontawesome/css/fontawesome.min.css"
+    />
+
+	<link rel="stylesheet" href="assets/plugins/slick/slick.css">
+	<link rel="stylesheet" href="assets/plugins/slick/slick-theme.css">
+
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css" />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+	<link rel="stylesheet" href="assets/css/new.css">
+
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.min.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+
+	<!-- mobile-header -->
+	<section class="mobileHeader bg-dark py-2">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-2">
+					<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgMjQyLjY1IDI0Mi42NSI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOnVybCgjbGluZWFyLWdyYWRpZW50KTt9LmNscy0ye2ZpbGw6I2ZmZjt9PC9zdHlsZT48bGluZWFyR3JhZGllbnQgaWQ9ImxpbmVhci1ncmFkaWVudCIgeDE9IjI1MzgwLjc3IiB5MT0iMTEzNi43MyIgeDI9IjI1NjIzLjM4IiB5Mj0iMTEzNi43MyIgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgtMC44OCwgLTAuNDgsIDAuNDgsIC0wLjg4LCAyMTkzNy42NywgMTMzNzYuOTcpIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agb2Zmc2V0PSIwLjA0IiBzdG9wLWNvbG9yPSIjYTAyNjJhIi8+PHN0b3Agb2Zmc2V0PSIwLjM3IiBzdG9wLWNvbG9yPSIjY2IxODMxIi8+PHN0b3Agb2Zmc2V0PSIwLjc0IiBzdG9wLWNvbG9yPSIjZmYwNzNhIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PGcgaWQ9IkxheWVyXzIiIGRhdGEtbmFtZT0iTGF5ZXIgMiI+PGcgaWQ9IkxheWVyXzEtMiIgZGF0YS1uYW1lPSJMYXllciAxIj48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0xNSw2M0ExMjEuMzEsMTIxLjMxLDAsMSwxLDYzLDIyNy42OSwxMjEuMywxMjEuMywwLDAsMSwxNSw2M1oiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0xNDQuMzMsMTQzbC0uMDUuMTJhLjk0Ljk0LDAsMCwwLC4wNi0uMTVoMFoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0xNDQuNCwxNDIuOWgwbDAsMGgwWiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTE2My44NCwxNTEuMjZjLS43MS0zLTIuNy03LjY5LTcuMS05LjU3LTUuMjUtMi4yNS05LjExLTEuMTItMTEuNTcuNjdsLS4wOCwwYy00LjQyLDkuNjMtMTMuNCwxNS45Mi0yMy43NiwxNS45M1MxMDIsMTUyLDk3LjU4LDE0Mi4zNGwtLjA3LDBjLTIuNDctMS43OS02LjMzLTIuOTItMTEuNTgtLjY3LTQuNCwxLjg4LTYuMzksNi42LTcuMSw5LjU3aDB2MGwuMDYuMUEzMy45NCwzMy45NCwwLDAsMCw4Mi45MywxNTlhNDYuMjgsNDYuMjgsMCwwLDAsNzYuODIsMCwzNC43OSwzNC43OSwwLDAsMCw0LjEtNy42OWgwWiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTIxMi4xNSwxMzJoMGwwLDBoMGwwLS4wNUwxMzAuNTYsNjkuNDRhMTMuNjgsMTMuNjgsMCwwLDAtMi4zNC0xLjc5LDEzLjI0LDEzLjI0LDAsMCwwLTEzLjcsMCwxMy41NiwxMy41NiwwLDAsMC0yLjQ5LDEuOUw3Mi44OSw5OS40NnYtMjJoMHYwaDBhMTIuODgsMTIuODgsMCwwLDAtMjEuMDgsMGgwdjBoMHYzOC4yMkwzMC41MiwxMzEuODhsMCwwLDAsMCwwLDBoMGExMi44OCwxMi44OCwwLDAsMCwxMi44NSwxNi42OGwwLDAsMCwwaDBsMCwwLDc0LjIzLTU2Ljc5TDEyMS4zNSw4OSwxMjUsOTEuODVsNzQuMiw1Ni44LDAsMCwwLDBoMGwwLDAsMCwwQTEyLjg3LDEyLjg3LDAsMCwwLDIxMi4xNSwxMzJaIi8+PC9nPjwvZz48L3N2Zz4=" alt="">
+				</div>
+				<div class="col-6 pl-0">
+					<p class="fs-13 text-white mb-0">Your Location</p>
+					<p class="fs-13 text-white mb-0">
+						Lorem, ipsum. <i class="fa fa-chevron-down"></i>
+					</p>
+				</div>
+				<div class="col-4">
+					<div class="text-right">
+						<button class="btn text-white">
+							<i class="fa fa-mobile"></i>
+						</button>
+						<button class="btn text-white">
+							<i class="fa fa-phone-alt"></i>
+						</button>
+					</div>
+				</div>
+
+				<div class="col-12 py-2">
+					<form action="">
+						<input type="text" class="form-control searchBox" placeholder="Search for services" name="" id="">
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- mobile-header -->
+
+	<!-- topbar -->
+	<section class="topBar py-2">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-5">
+					<div class="row">
+						<div class="col-3 m-auto">
+							<a href="index.html">
+								<img src="assets/img/logo.svg" class="img-fluid" alt="">
+							</a>
+						</div>
+						<div class="col-9">
+							<form action="">
+								<input type="text" class="form-control searchBox" name="" id="">
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-7 mobile-margin text-right m-auto">
+					<ul class="list-unstyled m-0 p-0">
+						<li class="d-inline-block mr-3">
+							<a href="" class="text-white text-decoration-none">
+								<img src="assets/img/partner.svg" class="img-fluid icon" alt=""> Become A partner
+							</a>
+						</li>
+						<li class="d-inline-block mr-3">
+							<a href="" class="text-white text-decoration-none">
+								<i class="fa fa-map-marker-alt"></i> Location
+							</a>
+						</li>
+						<li class="d-inline-block">
+							<a href="" class="btn btn-outline-success rounded-pill text-white text-decoration-none px-3">
+								Login
+							</a>
+						</li>
+						<li class="d-inline-block">
+							<a href="" class="text-warning text-decoration-none px-3 position-relative">
+								<i class="fa fa-shopping-cart"></i>
+								<span class="count">0</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- topbar -->
+
+	
+
+    <!-- menubar -->
+
+    <header class="header">
+      <nav class="navbar navbar-expand-lg header-nav">
+        <div class="navbar-header">
+          <a id="mobile_btn" href="javascript:void(0);">
+            <span class="bar-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </a>
+          <!-- <a href="index-2.html" class="navbar-brand logo">
+            <img src="assets/img/logo.png" class="img-fluid" alt="Logo" />
+          </a> -->
+        </div>
+        <div class="main-menu-wrapper">
+          <div class="menu-header">
+            <a href="index-2.html" class="menu-logo">
+              <img src="assets/img/logo.svg" class="img-fluid" alt="Logo" />
+            </a>
+            <a id="menu_close" class="menu-close" href="javascript:void(0);">
+              <i class="fas fa-times"></i>
+            </a>
+          </div>
+          <ul class="main-nav">
+            <li class="has-submenu active">
+              <a href="#">Recently Launched <i class="fas fa-chevron-down"></i></a>
+              <ul class="submenu">
+                <li><a href="">Lorem, ipsum.</a></li>
+                <li><a href="">Lorem, ipsum.</a></li>
+                <li><a href="">Lorem, ipsum.</a></li>
+                <li><a href="">Lorem, ipsum.</a></li>
+              </ul>
+            </li>
+            <li class="has-submenu">
+              <a href="#">Salon at Home <i class="fas fa-chevron-down"></i></a>
+              <ul class="submenu">
+                <li><a href="">Lorem, ipsum.</a></li>
+                <li><a href="">Lorem, ipsum.</a></li>
+                <li><a href="">Lorem, ipsum.</a></li>
+                <li><a href="">Lorem, ipsum.</a></li>
+              </ul>
+            </li>
+            <li class="has-submenu">
+              <a href="#">Home Cleaning <i class="fas fa-chevron-down"></i></a>
+              <ul class="submenu">
+				<li><a href="">Lorem, ipsum.</a></li>
+                <li><a href="">Lorem, ipsum.</a></li>
+                <li><a href="">Lorem, ipsum.</a></li>
+                <li><a href="">Lorem, ipsum.</a></li>
+              </ul>
+            </li>
+            <li class="has-submenu">
+              <a href="#">Appliances <i class="fas fa-chevron-down"></i></a>
+              <ul class="submenu">
+                <li><a href="">Lorem, ipsum.</a></li>
+                <li><a href="">Lorem, ipsum.</a></li>
+                <li><a href="">Lorem, ipsum.</a></li>
+                <li><a href="">Lorem, ipsum.</a></li>
+              </ul>
+            </li>
+            <li class="has-submenu">
+              <a href="#">Home Repairs <i class="fas fa-chevron-down"></i></a>
+              <ul class="submenu">
+                <li><a href="">Lorem, ipsum.</a></li>
+                <li><a href="">Lorem, ipsum.</a></li>
+                <li><a href="">Lorem, ipsum.</a></li>
+                <li><a href="">Lorem, ipsum.</a></li>
+              </ul>
+            </li>
+            <li class="has-submenu">
+              <a href="#">Home Construction <i class="fas fa-chevron-down"></i></a>
+              <ul class="submenu">
+                <li><a href="">Lorem, ipsum.</a></li>
+                <li><a href="">Lorem, ipsum.</a></li>
+                <li><a href="">Lorem, ipsum.</a></li>
+                <li><a href="">Lorem, ipsum.</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <ul class="nav header-navbar-rht">
+          <a href="">
+			  <img src="assets/img/mustRead.png" class="img-fluid" alt="">
+		  </a>
+        </ul>
+      </nav>
+    </header>
+    <!-- menubar -->
+
+
+<!-- cardSlider -->
+<section class="card-slider py-5 mobileSlider">
+	<div class="container">
+		<h5 class="text-white">Construction, Renovation & Interiors</h5>
+		<div class="cardSlider">
+			<div class="slide">
+				<div class="card bg-transparent">
+					<div class="card-body p-0">
+						<img src="assets/img/s1.jpg" class="img-fluid card-img-top" alt="">
+						<!-- <p class="mt-2 mb-0">Construction</p> -->
+					</div>
+				</div>
+			</div>
+			<div class="slide">
+				<div class="card bg-transparent">
+					<div class="card-body p-0">
+						<img src="assets/img/s2.jpg" class="img-fluid card-img-top" alt="">
+						<!-- <p class="mt-2 mb-0">Construction</p> -->
+					</div>
+				</div>
+			</div>
+			<div class="slide">
+				<div class="card bg-transparent">
+					<div class="card-body p-0">
+						<img src="assets/img/s3.jpg" class="img-fluid card-img-top" alt="">
+						<!-- <p class="mt-2 mb-0">Construction</p> -->
+					</div>
+				</div>
+			</div>
+			<div class="slide">
+				<div class="card bg-transparent">
+					<div class="card-body p-0">
+						<img src="assets/img/s1.jpg" class="img-fluid card-img-top" alt="">
+						<!-- <p class="mt-2 mb-0">Construction</p> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- cardSlider -->
+
+
+
+
+	<!-- banner slider -->
+	<section class="banner">
+		<div class="container-fluid p-0">
+			<div class="bannerSlider">
+				<div class="slide">
+					<div class="card border-0">
+						<img src="assets/img/1.jpg" class="img-fluid" alt="">
+					</div>
+				</div>
+				<div class="slide">
+					<div class="card border-0">
+						<img src="assets/img/2.jpg" class="img-fluid" alt="">
+					</div>
+				</div>
+				<div class="slide">
+					<div class="card border-0">
+						<img src="assets/img/3.jpg" class="img-fluid" alt="">
+					</div>
+				</div>
+				<div class="slide">
+					<div class="card border-0">
+						<img src="assets/img/4.jpg" class="img-fluid" alt="">
+					</div>
+				</div>
+				<div class="slide">
+					<div class="card border-0">
+						<img src="assets/img/5.jpg" class="img-fluid" alt="">
+					</div>
+				</div>
+				<div class="slide">
+					<div class="card border-0">
+						<img src="assets/img/6.jpg" class="img-fluid" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- banner slider -->
+
+
+	<!-- icon slider -->
+	<section class="py-1 desktopSlider">
+		<div class="container">
+			<h5>Construction and Maintenance Services</h5>
+			<div class="iconSlider">
+				<div class="slide">
+					<div class="text-cent">
+						<img src="assets/img/ic1.svg" class="img-fluid" alt="">
+						<p class="fs-12 text-center">AC Services</p>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="text-cent">
+						<img src="assets/img/ic2.svg" class="img-fluid" alt="">
+						<p class="fs-12 text-center">AC Services</p>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="text-cent">
+						<img src="assets/img/ic1.svg" class="img-fluid" alt="">
+						<p class="fs-12 text-center">AC Services</p>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="text-cent">
+						<img src="assets/img/ic2.svg" class="img-fluid" alt="">
+						<p class="fs-12 text-center">AC Services</p>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="text-cent">
+						<img src="assets/img/ic1.svg" class="img-fluid" alt="">
+						<p class="fs-12 text-center">AC Services</p>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="text-cent">
+						<img src="assets/img/ic2.svg" class="img-fluid" alt="">
+						<p class="fs-12 text-center">AC Services</p>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="text-cent">
+						<img src="assets/img/ic1.svg" class="img-fluid" alt="">
+						<p class="fs-12 text-center">AC Services</p>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="text-cent">
+						<img src="assets/img/ic2.svg" class="img-fluid" alt="">
+						<p class="fs-12 text-center">AC Services</p>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="text-cent">
+						<img src="assets/img/ic1.svg" class="img-fluid" alt="">
+						<p class="fs-12 text-center">AC Services</p>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="text-cent">
+						<img src="assets/img/ic2.svg" class="img-fluid" alt="">
+						<p class="fs-12 text-center">AC Services</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- icon slider -->
+
+
+	<!-- cardSlider -->
+	<section class="card-slider py-5 desktopSlider">
+		<div class="container">
+			<h5>Construction, Renovation & Interiors</h5>
+			<div class="cardSlider">
+				<div class="slide">
+					<div class="card">
+						<div class="card-body">
+							<img src="assets/img/s1.jpg" class="img-fluid card-img-top" alt="">
+							<p class="mt-2 mb-0">Construction</p>
+						</div>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="card">
+						<div class="card-body">
+							<img src="assets/img/s2.jpg" class="img-fluid card-img-top" alt="">
+							<p class="mt-2 mb-0">Construction</p>
+						</div>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="card">
+						<div class="card-body">
+							<img src="assets/img/s3.jpg" class="img-fluid card-img-top" alt="">
+							<p class="mt-2 mb-0">Construction</p>
+						</div>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="card">
+						<div class="card-body">
+							<img src="assets/img/s1.jpg" class="img-fluid card-img-top" alt="">
+							<p class="mt-2 mb-0">Construction</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- cardSlider -->
+
+
+		<!-- cardSlider -->
+		<section class="card-slider pb-5 desktopSlider">
+			<div class="container">
+				<h5>Offers</h5>
+				<div class="cardSlider">
+					<div class="slide">
+						<div class="card">
+							<div class="card-body">
+								<img src="assets/img/o1.jpg" class="img-fluid card-img-top" alt="">
+								<p class="mt-2 mb-0">Construction</p>
+							</div>
+						</div>
+					</div>
+					<div class="slide">
+						<div class="card">
+							<div class="card-body">
+								<img src="assets/img/o2.jpg" class="img-fluid card-img-top" alt="">
+								<p class="mt-2 mb-0">Construction</p>
+							</div>
+						</div>
+					</div>
+					<div class="slide">
+						<div class="card">
+							<div class="card-body">
+								<img src="assets/img/o3.jpg" class="img-fluid card-img-top" alt="">
+								<p class="mt-2 mb-0">Construction</p>
+							</div>
+						</div>
+					</div>
+					<div class="slide">
+						<div class="card">
+							<div class="card-body">
+								<img src="assets/img/o1.jpg" class="img-fluid card-img-top" alt="">
+								<p class="mt-2 mb-0">Construction</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- cardSlider -->
+
+
+
+
+
+		<!-- home cleaning -->
+		<section class="pb-5 homeCleaning desktopSlider">
+			<div class="container">
+				<h5>Home Cleaning</h5>
+				<div class="row">
+					<div class="col-12">
+						<div class="card">
+							<div class="row">
+								<div class="col-md-3">
+									<div class="card">
+										<img src="assets/img/c1.jpg" class="img-fluid card-img-top" alt="">
+									</div>
+								</div>
+								<div class="col-md-9 pl-0">
+									<div class="row p-2">
+										<div class="col-md-3 col-6 border">
+											<div class="card h-100">
+												<div class="text-center">
+													<img src="assets/img/service.jpg" class="rounded-circle" alt="">
+													<p class="fs-13 text-uppercase mt-2">
+														deep home cleaning
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-3 col-6 border">
+											<div class="card h-100">
+												<div class="text-center">
+													<img src="assets/img/service.jpg" class="rounded-circle" alt="">
+													<p class="fs-13 text-uppercase mt-2">
+														deep home cleaning
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-3 col-6 border">
+											<div class="card h-100">
+												<div class="text-center">
+													<img src="assets/img/service.jpg" class="rounded-circle" alt="">
+													<p class="fs-13 text-uppercase mt-2">
+														deep home cleaning
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-3 col-6 border">
+											<div class="card h-100">
+												<div class="text-center">
+													<img src="assets/img/service.jpg" class="rounded-circle" alt="">
+													<p class="fs-13 text-uppercase mt-2">
+														deep home cleaning
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-3 col-6 border">
+											<div class="card h-100">
+												<div class="text-center">
+													<img src="assets/img/service.jpg" class="rounded-circle" alt="">
+													<p class="fs-13 text-uppercase mt-2">
+														deep home cleaning
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-3 col-6 border">
+											<div class="card h-100">
+												<div class="text-center">
+													<img src="assets/img/service.jpg" class="rounded-circle" alt="">
+													<p class="fs-13 text-uppercase mt-2">
+														deep home cleaning
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-3 col-6 border">
+											<div class="card h-100">
+												<div class="text-center">
+													<img src="assets/img/service.jpg" class="rounded-circle" alt="">
+													<p class="fs-13 text-uppercase mt-2">
+														deep home cleaning
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-3 col-6 border">
+											<div class="card h-100">
+												<div class="text-center">
+													<img src="assets/img/service.jpg" class="rounded-circle" alt="">
+													<p class="fs-13 text-uppercase mt-2">
+														deep home cleaning
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- home cleaning -->
+
+			<!-- home cleaning -->
+			<section class="pb-5 homeCleaning homeCleaning2 desktopSlider">
+				<div class="container">
+					<h5>Appliance Services</h5>
+					<div class="row">
+						<div class="col-12">
+							<div class="card">
+								<div class="row">
+									<div class="col-md-3">
+										<div class="card">
+											<img src="assets/img/c1.jpg" class="img-fluid card-img-top" alt="">
+										</div>
+									</div>
+									<div class="col-md-9 pl-0">
+										<div class="row p-2 w-100">
+											<div class="col-md-3 col-6 border">
+												<div class="card h-100">
+													<div class="text-center">
+														<img src="assets/img/service.jpg" class="rounded-circle" alt="">
+														<p class="fs-13 text-uppercase mt-2">
+															deep home cleaning
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-3 col-6 border">
+												<div class="card h-100">
+													<div class="text-center">
+														<img src="assets/img/service.jpg" class="rounded-circle" alt="">
+														<p class="fs-13 text-uppercase mt-2">
+															deep home cleaning
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-3 col-6 border">
+												<div class="card h-100">
+													<div class="text-center">
+														<img src="assets/img/service.jpg" class="rounded-circle" alt="">
+														<p class="fs-13 text-uppercase mt-2">
+															deep home cleaning
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-3 col-6 border">
+												<div class="card h-100">
+													<div class="text-center">
+														<img src="assets/img/service.jpg" class="rounded-circle" alt="">
+														<p class="fs-13 text-uppercase mt-2">
+															deep home cleaning
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-3 col-6 border">
+												<div class="card h-100">
+													<div class="text-center">
+														<a href="" class="text-danger">View All</a>
+													</div>
+												</div>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- home cleaning -->
+
+			
+		<!-- home cleaning -->
+		<section class="pb-5 homeCleaning desktopSlider">
+			<div class="container">
+				<h5>Home Repair</h5>
+				<div class="row">
+					<div class="col-12">
+						<div class="card">
+							<div class="row">
+								<div class="col-md-3">
+									<div class="card">
+										<img src="assets/img/c1.jpg" class="img-fluid card-img-top" alt="">
+									</div>
+								</div>
+								<div class="col-md-9 pl-0">
+									<div class="row p-2">
+										<div class="col-md-3 col-6 border">
+											<div class="card h-100">
+												<div class="text-center">
+													<img src="assets/img/service.jpg" class="rounded-circle" alt="">
+													<p class="fs-13 text-uppercase mt-2">
+														deep home cleaning
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-3 col-6 border">
+											<div class="card h-100">
+												<div class="text-center">
+													<img src="assets/img/service.jpg" class="rounded-circle" alt="">
+													<p class="fs-13 text-uppercase mt-2">
+														deep home cleaning
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-3 col-6 border">
+											<div class="card h-100">
+												<div class="text-center">
+													<img src="assets/img/service.jpg" class="rounded-circle" alt="">
+													<p class="fs-13 text-uppercase mt-2">
+														deep home cleaning
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-3 col-6 border">
+											<div class="card h-100">
+												<div class="text-center">
+													<img src="assets/img/service.jpg" class="rounded-circle" alt="">
+													<p class="fs-13 text-uppercase mt-2">
+														deep home cleaning
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-3 col-6 border">
+											<div class="card h-100">
+												<div class="text-center">
+													<img src="assets/img/service.jpg" class="rounded-circle" alt="">
+													<p class="fs-13 text-uppercase mt-2">
+														deep home cleaning
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-3 col-6 border">
+											<div class="card h-100">
+												<div class="text-center">
+													<img src="assets/img/service.jpg" class="rounded-circle" alt="">
+													<p class="fs-13 text-uppercase mt-2">
+														deep home cleaning
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-3 col-6 border">
+											<div class="card h-100">
+												<div class="text-center">
+													<img src="assets/img/service.jpg" class="rounded-circle" alt="">
+													<p class="fs-13 text-uppercase mt-2">
+														deep home cleaning
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-3 col-6 border">
+											<div class="card h-100">
+												<div class="text-center">
+													<img src="assets/img/service.jpg" class="rounded-circle" alt="">
+													<p class="fs-13 text-uppercase mt-2">
+														deep home cleaning
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- home cleaning -->
+
+
+		
+		<!-- home cleaning -->
+		<section class="pb-5 homeCleaning desktopSlider">
+			<div class="container">
+				<h5>Salon at Home</h5>
+				<div class="row">
+					<div class="col-12">
+						<div class="card">
+							<div class="row">
+								<div class="col-md-3">
+									<div class="card">
+										<img src="assets/img/c1.jpg" class="img-fluid card-img-top" alt="">
+									</div>
+								</div>
+								<div class="col-md-9 pl-0">
+									<div class="row p-2">
+										<div class="col-md-3 col-6 border">
+											<div class="card h-100">
+												<div class="text-center">
+													<img src="assets/img/service.jpg" class="rounded-circle" alt="">
+													<p class="fs-13 text-uppercase mt-2">
+														deep home cleaning
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-3 col-6 border">
+											<div class="card h-100">
+												<div class="text-center">
+													<img src="assets/img/service.jpg" class="rounded-circle" alt="">
+													<p class="fs-13 text-uppercase mt-2">
+														deep home cleaning
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-3 col-6 border">
+											<div class="card h-100">
+												<div class="text-center">
+													<img src="assets/img/service.jpg" class="rounded-circle" alt="">
+													<p class="fs-13 text-uppercase mt-2">
+														deep home cleaning
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-3 col-6 border">
+											<div class="card h-100">
+												<div class="text-center">
+													<img src="assets/img/service.jpg" class="rounded-circle" alt="">
+													<p class="fs-13 text-uppercase mt-2">
+														deep home cleaning
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-3 col-6 border">
+											<div class="card h-100">
+												<div class="text-center">
+													<img src="assets/img/service.jpg" class="rounded-circle" alt="">
+													<p class="fs-13 text-uppercase mt-2">
+														deep home cleaning
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-3 col-6 border">
+											<div class="card h-100">
+												<div class="text-center">
+													<img src="assets/img/service.jpg" class="rounded-circle" alt="">
+													<p class="fs-13 text-uppercase mt-2">
+														deep home cleaning
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-3 col-6 border">
+											<div class="card h-100">
+												<div class="text-center">
+													<img src="assets/img/service.jpg" class="rounded-circle" alt="">
+													<p class="fs-13 text-uppercase mt-2">
+														deep home cleaning
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-3 col-6 border">
+											<div class="card h-100">
+												<div class="text-center">
+													<img src="assets/img/service.jpg" class="rounded-circle" alt="">
+													<p class="fs-13 text-uppercase mt-2">
+														deep home cleaning
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- home cleaning -->
+
+
+		<!-- service section -->
+		<section class="py-3 mobileSlider">
+			<div class="container">
+				<h5 class="text-white">Home Maintenance</h5>
+				<div class="row">
+					<div class="col-4">
+						<div class="text-center">
+							<img src="assets/img/ic1.svg" class="img-fluid" alt="">
+							<p class="fs-13">Ac Services</p>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="text-center">
+							<img src="assets/img/ic1.svg" class="img-fluid" alt="">
+							<p class="fs-13">Ac Services</p>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="text-center">
+							<img src="assets/img/ic1.svg" class="img-fluid" alt="">
+							<p class="fs-13">Ac Services</p>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="text-center">
+							<img src="assets/img/ic1.svg" class="img-fluid" alt="">
+							<p class="fs-13">Ac Services</p>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="text-center">
+							<img src="assets/img/ic1.svg" class="img-fluid" alt="">
+							<p class="fs-13">Ac Services</p>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="text-center">
+							<img src="assets/img/ic1.svg" class="img-fluid" alt="">
+							<p class="fs-13">Ac Services</p>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="text-center">
+							<img src="assets/img/ic1.svg" class="img-fluid" alt="">
+							<p class="fs-13">Ac Services</p>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="text-center">
+							<img src="assets/img/ic1.svg" class="img-fluid" alt="">
+							<p class="fs-13">Ac Services</p>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="text-center">
+							<img src="assets/img/ic1.svg" class="img-fluid" alt="">
+							<p class="fs-13">Ac Services</p>
+						</div>
+					</div>
+					<div class="col-12 mt-3">
+						<a href="" class="btn btn-block btn-outline-danger text-danger rounded">
+							View More Services
+						</a>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+		<!-- service section -->
+
+		<!-- cardSlider -->
+<section class="card-slider pb-5 mobileSlider">
+	<div class="container">
+		<h5 class="text-white">Offers</h5>
+		<div class="cardSlider">
+			<div class="slide">
+				<div class="card bg-transparent">
+					<div class="card-body p-0">
+						<img src="assets/img/o1.jpg" class="img-fluid card-img-top" alt="">
+						<!-- <p class="mt-2 mb-0">Construction</p> -->
+					</div>
+				</div>
+			</div>
+			<div class="slide">
+				<div class="card bg-transparent">
+					<div class="card-body p-0">
+						<img src="assets/img/o2.jpg" class="img-fluid card-img-top" alt="">
+						<!-- <p class="mt-2 mb-0">Construction</p> -->
+					</div>
+				</div>
+			</div>
+			<div class="slide">
+				<div class="card bg-transparent">
+					<div class="card-body p-0">
+						<img src="assets/img/o3.jpg" class="img-fluid card-img-top" alt="">
+						<!-- <p class="mt-2 mb-0">Construction</p> -->
+					</div>
+				</div>
+			</div>
+			<div class="slide">
+				<div class="card bg-transparent">
+					<div class="card-body p-0">
+						<img src="assets/img/o1.jpg" class="img-fluid card-img-top" alt="">
+						<!-- <p class="mt-2 mb-0">Construction</p> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- cardSlider -->
+
+
+		<!-- subscription -->
+		<section class="subscription bg-black pb-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="card bg-black border-0">
+							<div class="card-body">
+								<div class="row">
+									<div class="col-9">
+										<h5>
+											Subscription <span class="bg-warning rounded-pill fs-13 px-2 py-1 text-white">
+												<i class="fa fa-star"></i> Newly Launched
+											</span>
+										</h5>
+									</div>
+									<div class="col-3 text-right">
+										<a href="" class="text-danger">VIEW ALL</a>
+									</div>
+								</div>
+
+
+
+								<div class="subscriptionSlider mt-3">
+									<div class="slide border p-2 m-2">
+										<div class="card border">
+											<div class="row">
+												<div class="col-md-4">
+													<img src="assets/img/p1.jpg" class="img-fluid" alt="">
+												</div>
+												<div class="col-md-8">
+													<p class="mb-1">Lorem, ipsum dolor</p>
+													<p class="fs-13 mb-1">
+														Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+													</p>
+													<p class="mb-1">
+														<strike>&euro;3567</strike> &euro;2853
+													</p>
+													<p class="fs-12 text-info">
+														20% OFF
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="slide border p-2 m-2">
+										<div class="card border">
+											<div class="row">
+												<div class="col-md-4">
+													<img src="assets/img/p1.jpg" class="img-fluid" alt="">
+												</div>
+												<div class="col-md-8">
+													<p class="mb-1">Lorem, ipsum dolor</p>
+													<p class="fs-13 mb-1">
+														Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+													</p>
+													<p class="mb-1">
+														<strike>&euro;3567</strike> &euro;2853
+													</p>
+													<p class="fs-12 text-info">
+														20% OFF
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="slide border p-2 m-2">
+										<div class="card border">
+											<div class="row">
+												<div class="col-md-4">
+													<img src="assets/img/p1.jpg" class="img-fluid" alt="">
+												</div>
+												<div class="col-md-8">
+													<p class="mb-1">Lorem, ipsum dolor</p>
+													<p class="fs-13 mb-1">
+														Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+													</p>
+													<p class="mb-1">
+														<strike>&euro;3567</strike> &euro;2853
+													</p>
+													<p class="fs-12 text-info">
+														20% OFF
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="slide border p-2 m-2">
+										<div class="card border">
+											<div class="row">
+												<div class="col-md-4">
+													<img src="assets/img/p1.jpg" class="img-fluid" alt="">
+												</div>
+												<div class="col-md-8">
+													<p class="mb-1">Lorem, ipsum dolor</p>
+													<p class="fs-13 mb-1">
+														Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+													</p>
+													<p class="mb-1">
+														<strike>&euro;3567</strike> &euro;2853
+													</p>
+													<p class="fs-12 text-info">
+														20% OFF
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- subscription -->
+
+		<!-- happines guarantee -->
+		<section class="guarantee pb-5 bg-black">
+			<div class="container">
+				<div class="card bg-black">
+					<div class="card-body">
+						<div class="text-center">
+							<div class="guarantee">
+								<img src="assets/img/guarantee.png" class="img-fluid" alt="">
+								<h5 class="text-left">
+									HAPPINESS GUARANTEE <br> <span class="fs-13 font-weight-normal">Because your happiness is our goal!</span>
+								</h5>
+							</div>
+						</div>
+
+						<div class="row mt-4">
+							<div class="col-3">
+								<div class="text-center">
+									<img src="assets/img/cap.png" class="img-fluid capImg" alt="">
+									<p class="mt-2">Verified Porfessionals</p>
+								</div>
+							</div>
+							<div class="col-3">
+								<div class="text-center">
+									<img src="assets/img/cap.png" class="img-fluid capImg" alt="">
+									<p class="mt-2">Verified Porfessionals</p>
+								</div>
+							</div>
+							<div class="col-3">
+								<div class="text-center">
+									<img src="assets/img/cap.png" class="img-fluid capImg" alt="">
+									<p class="mt-2">Verified Porfessionals</p>
+								</div>
+							</div>
+							<div class="col-3">
+								<div class="text-center">
+									<img src="assets/img/cap.png" class="img-fluid capImg" alt="">
+									<p class="mt-2">Verified Porfessionals</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="text-center mt-3">
+							<a href="" class="btn btn-outline-danger px-4 text-danger rounded-pill fs-13">Find Out More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- happines guarantee -->
+
+
+		<!-- count section -->
+		<section class="countSection pb-5 desktopSlider">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 border-right text-center">
+						<h3>2 Million+</h3>
+						<p class="fs-13">Customers Served</p>
+					</div>
+					<div class="col-md-4 border-right text-center">
+						<h3>65,000</h3>
+						<p class="fs-13">Verified Experts</p>
+					</div>
+					<div class="col-md-4 text-center">
+						<h3>100 +</h3>
+						<p class="fs-13">Live Services</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- count section -->
+
+		<!-- brands -->
+		<section class="brands pb-5 desktopSlider">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2 col-6 m-auto p-2">
+						<div class="text-center">
+							<img src="assets/img/br1.png" class="img-fluid" alt="">
+						</div>
+					</div>
+					<div class="col-md-2 col-6 m-auto p-2">
+						<div class="text-center">
+							<img src="assets/img/br2.png" class="img-fluid" alt="">
+						</div>
+					</div>
+					<div class="col-md-2 col-6 m-auto p-2">
+						<div class="text-center">
+							<img src="assets/img/br3.png" class="img-fluid" alt="">
+						</div>
+					</div>
+					<div class="col-md-2 col-6 m-auto p-2">
+						<div class="text-center">
+							<img src="assets/img/br5.png" class="img-fluid" alt="">
+						</div>
+					</div>
+					<div class="col-md-2 col-6 m-auto p-2">
+						<div class="text-center">
+							<img src="assets/img/br4.png" class="img-fluid" alt="">
+						</div>
+					</div>
+					<div class="col-md-2 col-6 m-auto p-2">
+						<div class="text-center">
+							<img src="assets/img/br6.png" class="img-fluid" alt="">
+						</div>
+					</div>
+					<div class="col-md-2 col-6 ml-auto p-2">
+						<div class="text-center">
+							<img src="assets/img/br7.png" class="img-fluid" alt="">
+						</div>
+					</div>
+					<div class="col-md-2 col-6 mr-auto p-2">
+						<div class="text-center">
+							<img src="assets/img/br8.png" class="img-fluid" alt="">
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<!-- brands -->
+
+
+		<!-- available cities -->
+		<section class="mobileSlider bg-black py-3">
+			<div class="container">
+				<h5 class="text-white">Available Cities</h5>
+				<div class="newSlider">
+					<div class="slide text-center">
+						<img src="assets/img/ic1.svg" class="img-fluid" alt="">
+						Chennai
+					</div>
+					<div class="slide text-center">
+						<img src="assets/img/ic1.svg" class="img-fluid" alt="">
+						Chennai
+					</div>
+					<div class="slide text-center">
+						<img src="assets/img/ic1.svg" class="img-fluid" alt="">
+						Chennai
+					</div>
+					<div class="slide text-center">
+						<img src="assets/img/ic1.svg" class="img-fluid" alt="">
+						Chennai
+					</div>
+					<div class="slide text-center">
+						<img src="assets/img/ic1.svg" class="img-fluid" alt="">
+						Chennai
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- available cities -->
+
+		<!-- footer -->
+		<section class="footer py-5 bg-black">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-5">
+						<a href="">
+							<img src="assets/img/logo.svg" class="img-fluid footerLogo mb-3" alt="">
+						</a>
+						<p class="fs-13 text-white-50 mb-1">Sarvaloka Services on Call Pvt Ltd</p>
+						<p class="fs-13 text-white-50">© Housejoy 2014 - 2021. All Rights Reserved.</p>
+
+						<ul class="list-unstyled m-0 p-0">
+							<li class="d-inline-block mr-2">
+								<a href="" class="text-white">
+									<i class="fab fa-facebook-square"></i>
+								</a>
+							</li>
+							<li class="d-inline-block mr-2">
+								<a href="" class="text-white">
+									<i class="fab fa-twitter"></i>
+								</a>
+							</li>
+							<li class="d-inline-block mr-2">
+								<a href="" class="text-white">
+									<i class="fab fa-instagram"></i>
+								</a>
+							</li>
+							<li class="d-inline-block mr-2">
+								<a href="" class="text-white">
+									<i class="fab fa-youtube-square"></i>
+								</a>
+							</li>
+							<li class="d-inline-block mr-2">
+								<a href="" class="text-white">
+									<i class="fab fa-linkedin"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-7">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="row">
+									<div class="col-6">
+										<h6 class="text-white">COMPANY</h6>
+										<ul class="list-unstyled m-0 p-0">
+											<li>
+												<a href="" class="text-white-50 fs-12">
+													About Us
+												</a>
+											</li>
+											<li>
+												<a href="" class="text-white-50 fs-12">
+													Privacy
+												</a>
+											</li>
+											<li>
+												<a href="" class="text-white-50 fs-12">
+													FAQ & Terms of Use
+												</a>
+											</li>
+											<li>
+												<a href="" class="text-white-50 fs-12">
+													Contact Us
+												</a>
+											</li>
+											<li>
+												<a href="" class="text-white-50 fs-12">
+													Blog
+												</a>
+											</li>
+											<li>
+												<a href="" class="text-white-50 fs-12">
+													Coupons
+												</a>
+											</li>
+											<li>
+												<a href="" class="text-white-50 fs-12">
+													Sitemap
+												</a>
+											</li>
+											<li>
+												<a href="" class="text-white-50 fs-12">
+													Facilities Services
+												</a>
+											</li>
+											<li>
+												<a href="" class="text-white-50 fs-12">
+													Service Partner Onboarding
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="col-6">
+										<h6 class="text-white">CITIES</h6>
+										<ul class="list-unstyled m-0 p-0">
+											<li>
+												<a href="" class="text-white-50 fs-12">
+													Chennai
+												</a>
+											</li>
+											<li>
+												<a href="" class="text-white-50 fs-12">
+													Delhi
+												</a>
+											</li>
+											<li>
+												<a href="" class="text-white-50 fs-12">
+													Hyderabad
+												</a>
+											</li>
+											<li>
+												<a href="" class="text-white-50 fs-12">
+													Pune
+												</a>
+											</li>
+											<li>
+												<a href="" class="text-white-50 fs-12">
+													Bangalore
+												</a>
+											</li>
+											<li>
+												<a href="" class="text-white-50 fs-12">
+													Mumbai
+												</a>
+											</li>
+											
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<h6 class="text-white">
+									DOWNLOAD HOUSEJOY APP
+								</h6>
+								<a href="">
+									<img src="assets/img/ios.png" class="img-fluid" alt="">
+								</a>
+								<a href="">
+									<img src="assets/img/android.png" class="img-fluid" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- footer -->
+
+
+
+
+		<!-- mobile menu -->
+		<section class="mobileMenuBar py-2 bg-black mobileSlider">
+			<div class="container">
+				<ul class="list-unstyled m-0 p-0">
+					<li class="d-inline-block">
+						<a href="" class="text-white text-decoration-none">
+							<div class="text-center">
+								<i class="fa fa-home"></i> <br>
+								Home
+							</div>
+						</a>
+					</li>
+					<li class="d-inline-block">
+						<a href="" class="text-white text-decoration-none">
+							<div class="text-center">
+								<i class="fa fa-truck"></i> <br>
+								Orders
+							</div>
+						</a>
+					</li>
+					<li class="d-inline-block">
+						<a href="" class="text-white text-decoration-none">
+							<div class="text-center">
+								<i class="fa fa-list"></i> <br>
+								All Services
+							</div>
+						</a>
+					</li>
+					<li class="d-inline-block">
+						<a href="" class="text-white text-decoration-none">
+							<div class="text-center">
+								<i class="fa fa-user"></i> <br>
+								Account
+							</div>
+						</a>
+					</li>
+					<li class="d-inline-block">
+						<a href="" class="text-white text-decoration-none">
+							<div class="text-center">
+								<i class="fa fa-shopping-cart"></i> <br>
+								My Cart
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!-- mobile menu -->
+
+
+		<!-- footerTable -->
+		<section class="footerTable py-5 desktopSlider">
+			<div class="container-fluid">
+				<table class="table mb-0">
+					<tr>
+						<td class="border-0">
+							<h6 class="text-white">
+								RECENTLY LAUNCHED
+							</h6>
+						</td>
+						<td class="border-0">
+							<ul class="list-unstyled m-0 p-0">
+								<li class="d-inline-block mr-2">
+									<a href="" class="text-white-50">
+										Virus Fumigation (Home)
+									</a>
+								</li>
+								<li class="text-center d-inline-block mr-2">
+									<span class="text-white-50">|</span>
+								</li>
+								<li class="d-inline-block mr-2">
+									<a href="" class="text-white-50">
+										Virus Fumigation (Office)
+									</a>
+								</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="border-0">
+							<h6 class="text-white">
+								SALON AT HOME
+							</h6>
+						</td>
+						<td class="border-0">
+							<ul class="list-unstyled m-0 p-0">
+								<li class="d-inline-block mr-2">
+									<a href="" class="text-white-50">
+										All in one Dhamaka Package
+									</a>
+								</li>
+								<li class="text-center d-inline-block mr-2">
+									<span class="text-white-50">|</span>
+								</li>
+								<li class="d-inline-block mr-2">
+									<a href="" class="text-white-50">
+										Economy Package
+									</a>
+								</li>
+								<li class="text-center d-inline-block mr-2">
+									<span class="text-white-50">|</span>
+								</li>
+								<li class="d-inline-block mr-2">
+									<a href="" class="text-white-50">
+										Facials & Clean-Up
+									</a>
+								</li>
+								<li class="text-center d-inline-block mr-2">
+									<span class="text-white-50">|</span>
+								</li>
+								<li class="d-inline-block mr-2">
+									<a href="" class="text-white-50">
+										Pedicure
+									</a>
+								</li>
+								<li class="text-center d-inline-block mr-2">
+									<span class="text-white-50">|</span>
+								</li>
+								<li class="d-inline-block mr-2">
+									<a href="" class="text-white-50">
+										Manicure
+									</a>
+								</li>
+								<li class="text-center d-inline-block mr-2">
+									<span class="text-white-50">|</span>
+								</li>
+								<li class="d-inline-block mr-2">
+									<a href="" class="text-white-50">
+										Monthly Essential Package
+									</a>
+								</li>
+								<li class="text-center d-inline-block mr-2">
+									<span class="text-white-50">|</span>
+								</li>
+								<li class="d-inline-block mr-2">
+									<a href="" class="text-white-50">
+										Seasoul Body Spa
+									</a>
+								</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="border-0">
+							<h6 class="text-white">
+								HOME CLEANING
+							</h6>
+						</td>
+						<td class="border-0">
+							<ul class="list-unstyled m-0 p-0">
+								<li class="d-inline-block mr-2">
+									<a href="" class="text-white-50">
+										Floor Scrubbing & Polishing
+									</a>
+								</li>
+								
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="border-0">
+							<h6 class="text-white">
+								APPLIANCES
+							</h6>
+						</td>
+						<td class="border-0">
+							<ul class="list-unstyled m-0 p-0">
+								<li class="d-inline-block mr-2">
+									<a href="" class="text-white-50">
+										Geyser
+									</a>
+								</li>
+								<li class="text-center d-inline-block mr-2">
+									<span class="text-white-50">|</span>
+								</li>
+								<li class="d-inline-block mr-2">
+									<a href="" class="text-white-50">
+										Washing Machine
+									</a>
+								</li>
+								<li class="text-center d-inline-block mr-2">
+									<span class="text-white-50">|</span>
+								</li>
+								<li class="d-inline-block mr-2">
+									<a href="" class="text-white-50">
+										Refrigerator
+									</a>
+								</li>
+								<li class="text-center d-inline-block mr-2">
+									<span class="text-white-50">|</span>
+								</li>
+								<li class="d-inline-block mr-2">
+									<a href="" class="text-white-50">
+										Water Purifier
+									</a>
+								</li>
+								<li class="text-center d-inline-block mr-2">
+									<span class="text-white-50">|</span>
+								</li>
+								<li class="d-inline-block mr-2">
+									<a href="" class="text-white-50">
+										Microwave Oven
+									</a>
+								</li>
+								<li class="text-center d-inline-block mr-2">
+									<span class="text-white-50">|</span>
+								</li>
+								<li class="d-inline-block mr-2">
+									<a href="" class="text-white-50">
+										Chimney and Hob
+									</a>
+								</li>
+								<li class="text-center d-inline-block mr-2">
+									<span class="text-white-50">|</span>
+								</li>
+								<li class="d-inline-block mr-2">
+									<a href="" class="text-white-50">
+										TV
+									</a>
+								</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="border-0">
+							<h6 class="text-white">
+								HOME REPAIRS
+							</h6>
+						</td>
+						<td class="border-0">
+							<ul class="list-unstyled m-0 p-0">
+								<li class="d-inline-block mr-2">
+									<a href="" class="text-white-50">
+										Painting
+									</a>
+								</li>
+								<li class="text-center d-inline-block mr-2">
+									<span class="text-white-50">|</span>
+								</li>
+								<li class="d-inline-block mr-2">
+									<a href="" class="text-white-50">
+										Appliances
+									</a>
+								</li>
+								<li class="text-center d-inline-block mr-2">
+									<span class="text-white-50">|</span>
+								</li>
+								<li class="d-inline-block mr-2">
+									<a href="" class="text-white-50">
+										Plumbing
+									</a>
+								</li>
+								<li class="text-center d-inline-block mr-2">
+									<span class="text-white-50">|</span>
+								</li>
+								<li class="d-inline-block mr-2">
+									<a href="" class="text-white-50">
+										Electrical
+									</a>
+								</li>
+								<li class="text-center d-inline-block mr-2">
+									<span class="text-white-50">|</span>
+								</li>
+								<li class="d-inline-block mr-2">
+									<a href="" class="text-white-50">
+										Carpentry
+									</a>
+								</li>
+								
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="border-0">
+							<h6 class="text-white">
+								HOME CONSTRUCTION
+							</h6>
+						</td>
+						<td class="border-0">
+							<ul class="list-unstyled m-0 p-0">
+								<li class="d-inline-block mr-2">
+									<a href="" class="text-white-50">
+										HOME CONSTRUCTION
+Construction
+									</a>
+								</li>
+								<li class="text-center d-inline-block mr-2">
+									<span class="text-white-50">|</span>
+								</li>
+								<li class="d-inline-block mr-2">
+									<a href="" class="text-white-50">
+										Renovation & Refurbishment
+									</a>
+								</li>
+								<li class="text-center d-inline-block mr-2">
+									<span class="text-white-50">|</span>
+								</li>
+								<li class="d-inline-block mr-2">
+									<a href="" class="text-white-50">
+										Interior Design
+									</a>
+								</li>
+								<li class="text-center d-inline-block mr-2">
+									<span class="text-white-50">|</span>
+								</li>
+								<li class="d-inline-block mr-2">
+									<a href="" class="text-white-50">
+										Painting
+									</a>
+								</li>
+								
+							</ul>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</section>
+		<!-- footerTable -->
+
+
+
+
+    <!-- <script
+      data-cfasync="false"
+      src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script> -->
+    <script src="assets/js/jquery.min.js"></script>
+
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <script src="assets/js/slick.js"></script>
+
+	<script src="assets/plugins/slick/slick.min.js"></script>
+
+	<script src="assets/js/new.js"></script>
+
+    <script src="assets/js/script.js"></script>
+
+
+	
+  </body>
+
+  <!-- Mirrored from doccure-html.dreamguystech.com/template/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Sep 2021 10:25:01 GMT -->
+</html>
