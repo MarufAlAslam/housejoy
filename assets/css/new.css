@@ -136,6 +136,18 @@ a.text-white-50:hover{
 
 
 
+
+
+/* changes */
+.mobileHeader{
+    background-color: #1A1C22 !important;
+    display: none;
+}
+.mobileSlider{
+    display: none;
+}
+
+
 @media screen and (max-width:992px){
     .col-lg-7.mobile-margin.text-right.m-auto {
         margin-top: 20px !important;
@@ -156,6 +168,75 @@ a.text-white-50:hover{
 }
 
 @media screen and (max-width:767px){
+    .topBar{
+        display: none;
+    }
+    .mobileHeader{
+        display: block;
+    }
+    .header {
+        display: none;
+    }
+    .slick-prev.slick-arrow, .slick-next.slick-arrow {
+        display: none !important;
+    }
+    .mobileSlider{
+        display: block;
+        background-color: #23252B;
+        color: white;
+    }
+    .bg-black{
+        background-color: #23252B;
+    }
+    .subscription.bg-black.pb-5 {
+        color: white !important;
+    }
+    .desktopSlider{
+        display: none;
+    }
+    .subscription h5 {
+        color: white !important;
+    }
+    .guarantee img {
+        width: 60px !important;
+    }
+    .guarantee .text-left, .guarantee p {
+        color: white;
+    }
+    .mobileMenuBar.py-2.bg-black {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
+    }
+    .mobileMenuBar.py-2.bg-black ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .bannerSlider.slick-initialized.slick-slider.slick-dotted {
+        margin: 0;
+    }
+    /* .bg-warning.rounded-pill.fs-13.px-2.py-1.text-white {
+        display: block;
+        width: 75%;
+    } */
+    .subscription .card-body {
+        padding: 15px 0;
+    }
+    .subscription.pb-5 .slide .card {
+        background-image: url("../img/p1.jpg") !important;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-color: unset;
+    }
+    .subscription .img-fluid {
+        display: none !important;
+    }
+
+    
     .col-md-9.pl-0 {
         flex: 0 0 93%;
         /* display: flex; */
